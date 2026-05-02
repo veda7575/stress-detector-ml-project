@@ -1,0 +1,92 @@
+{
+  "primary": {
+    "accuracy": 0.8727,
+    "cv_mean": 0.8873,
+    "cv_std": 0.0156,
+    "features": [
+      "anxiety_level",
+      "self_esteem",
+      "mental_health_history",
+      "depression",
+      "headache",
+      "blood_pressure",
+      "sleep_quality",
+      "breathing_problem",
+      "noise_level",
+      "living_conditions",
+      "safety",
+      "basic_needs",
+      "academic_performance",
+      "study_load",
+      "teacher_student_relationship",
+      "future_career_concerns",
+      "social_support",
+      "peer_pressure",
+      "extracurricular_activities",
+      "bullying"
+    ],
+    "feature_importances": {
+      "blood_pressure": 0.1481629689665727,
+      "sleep_quality": 0.07947292068504218,
+      "depression": 0.07035606818553897,
+      "academic_performance": 0.06842407616678639,
+      "teacher_student_relationship": 0.06632127829390715,
+      "social_support": 0.06330732040829262,
+      "basic_needs": 0.05683504479963819,
+      "self_esteem": 0.05481629931809828,
+      "bullying": 0.053088040835072396,
+      "anxiety_level": 0.052309172156674875,
+      "headache": 0.04819064805808952,
+      "future_career_concerns": 0.0465142579477837,
+      "safety": 0.04616461356861575,
+      "peer_pressure": 0.042921621450071876,
+      "extracurricular_activities": 0.03882973747497543,
+      "living_conditions": 0.015915797377092783,
+      "study_load": 0.015659136020085857,
+      "noise_level": 0.015558968448506133,
+      "breathing_problem": 0.011233544892178784,
+      "mental_health_history": 0.005918484946976452
+    }
+  },
+  "secondary": {
+    "accuracy": 0.9231,
+    "cv_mean": 0.9288,
+    "features": [
+      "Gender",
+      "Age",
+      "Have you recently experienced stress in your life?",
+      "Have you noticed a rapid heartbeat or palpitations?",
+      "Have you been dealing with anxiety or tension recently?",
+      "Do you face any sleep problems or difficulties falling asleep?",
+      "Have you been dealing with anxiety or tension recently?.1",
+      "Have you been getting headaches more often than usual?",
+      "Do you get irritated easily?",
+      "Do you have trouble concentrating on your academic tasks?",
+      "Have you been feeling sadness or low mood?",
+      "Have you been experiencing any illness or health issues?",
+      "Do you often feel lonely or isolated?",
+      "Do you feel overwhelmed with your academic workload?",
+      "Are you in competition with your peers, and does it affect you?",
+      "Do you find that your relationship often causes you stress?",
+      "Are you facing any difficulties with your professors or instructors?",
+      "Is your working environment unpleasant or stressful?",
+      "Do you struggle to find time for relaxation and leisure activities?",
+      "Is your hostel or home environment causing you difficulties?",
+      "Do you lack confidence in your academic performance?",
+      "Do you lack confidence in your choice of academic subjects?",
+      "Academic and extracurricular activities conflicting for you?",
+      "Do you attend classes regularly?",
+      "Have you gained/lost weight?"
+    ]
+  },
+  "stress_labels": {
+    "0": "Low",
+    "1": "Moderate",
+    "2": "High"
+  },
+  "datasets_used": [
+    "StressLevelDataset.csv (1100 rows, primary)",
+    "Stress_Dataset.csv (843 rows, secondary)",
+    "Student_Mental_health.csv (101 rows, feature engineering)"
+  ]
+}
