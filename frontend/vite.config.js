@@ -6,12 +6,12 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      "/predict": "http://localhost:5000",
-      "/batch_predict": "http://localhost:5000",
-      "/health": "http://localhost:5000",
-      "/metadata": "http://localhost:5000",
-      "/features": "http://localhost:5000",
-      "/api": "http://localhost:5000"
+      "/predict": "https://stress-detector-api-yhx4.onrender.com",
+      "/batch_predict": "https://stress-detector-api-yhx4.onrender.com",
+      "/health": "https://stress-detector-api-yhx4.onrender.com",
+      "/metadata": "https://stress-detector-api-yhx4.onrender.com",
+      "/features": "https://stress-detector-api-yhx4.onrender.com",
+      "/api": "https://stress-detector-api-yhx4.onrender.com"
     }
   }
 });
