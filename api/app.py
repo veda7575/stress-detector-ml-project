@@ -276,8 +276,6 @@ def batch_predict():
         return jsonify({"error": str(e)}), 500
 
 
-import os
-
 if __name__ == "__main__":
     print("\n  Student Stress Detector API")
     print(f"  Primary model accuracy: {metadata['primary']['accuracy']*100:.1f}%")
@@ -286,7 +284,3 @@ if __name__ == "__main__":
     print(f"  Running on port {port}\n")
 
     app.run(host="0.0.0.0", port=port)
-
-@app.route("/test123")
-def test123():
-    return {"working": True}    

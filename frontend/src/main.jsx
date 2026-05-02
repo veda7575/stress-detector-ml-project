@@ -2,6 +2,8 @@ import React, { useMemo, useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://stress-detector-api-yhx4.onrender.com";
+
 // Whack-a-Mole Style Stress Buster Game
 function StressBusterGame() {
   const [score, setScore] = useState(0);
@@ -195,7 +197,7 @@ function App() {
     setError("");
 
     try {
-      const response = await fetch("https://stress-detector-api-yhx4.onrender.com/predict", {
+      const response = await fetch(`${API_BASE_URL}/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(inputs)
