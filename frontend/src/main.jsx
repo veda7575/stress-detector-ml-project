@@ -195,7 +195,7 @@ function App() {
     setError("");
 
     try {
-      const response = await fetch("/predict", {
+      const response = await fetch("https://stress-detector-api-yhx4.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(inputs)
