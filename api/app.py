@@ -286,3 +286,7 @@ if __name__ == "__main__":
     print(f"  Running on port {port}\n")
 
     app.run(host="0.0.0.0", port=port)
+
+@app.route("/test123")
+def test123():
+    return {"working": True}    
